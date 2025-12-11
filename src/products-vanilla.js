@@ -6,14 +6,23 @@ function renderProducts(products){
       <img src='${p.image}' />
       <div>${p.title}</div>
       <div>${p.price}$</div>
-      <button class='btn' data-id='${p.id}' data-title='${p.title.replace(/"/g,"&quot;")}' data-price='${p.price}'>Add to cart</button>
+      <button
+        class='btn'
+        data-id='${p.id}'
+        data-title='${p.title.replace(/"/g,"&quot;")}'
+        data-price='${p.price}'
+        data-image='${p.image.replace(/"/g,"&quot;")}'
+      >Add to cart</button>
     </div>
   `).join("");
 
   c.querySelectorAll("button").forEach(btn=>{
     btn.onclick=()=>{
       window.dispatchEvent(new CustomEvent("add-to-cart",{detail:{
-        id:Number(btn.dataset.id),title:btn.dataset.title,price:Number(btn.dataset.price)
+        id:Number(btn.dataset.id),
+        title:btn.dataset.title,
+        price:Number(btn.dataset.price),
+        image:btn.dataset.image
       }}));
     };
   });
