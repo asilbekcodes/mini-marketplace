@@ -15,7 +15,7 @@ export default function CartItem({ item, onRemove }) {
           <span>Qty: {item.qty}</span>
           <span>Price: {item.price.toFixed(2)} $</span>
         </div>
-        <button className='btn' onClick={() => onRemove(item.id)}>Delete</button>
+        <button className='btn ghost' onClick={() => onRemove(item.id)}>O'chirish</button>
       </div>
     </div>
   );
