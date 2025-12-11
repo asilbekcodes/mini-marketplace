@@ -22,7 +22,9 @@ Brauzerda ko'rsatilgan localhost portini oching.
   - ![Mini marketplace UI - mahsulotlar](src/assets/img1.png)
   - ![Mini marketplace UI - savat](src/assets/img2.png)
 - Demo havolasi (agar bo'lsa): 
-  ```https://mini-marketplace-omega.vercel.app/```
+  ```bash 
+  https://mini-marketplace-omega.vercel.app/
+  ```
 
 ## Foydali joylar
 - Asosiy komponent: `src/App.jsx`
