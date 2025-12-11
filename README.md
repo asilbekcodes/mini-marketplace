@@ -1,16 +1,31 @@
-# React + Vite
+# Mini Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Qulay, zamonaviy mini marketplace UI. Mahsulotlar `fakestoreapi.com` orqali olinadi va `localStorage` orqali savatcha saqlanadi.
 
-Currently, two official plugins are available:
+## Loyiha haqida
+- Vite + React (HMR yoqilgan)
+- Vanilla JS mahsulot ro'yxati (`src/products-vanilla.js`)
+- Savat holati React ichida yuritiladi va `localStorage`ga saqlanadi
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Ishga tushirish
+```bash
+npm install
+npm run dev
+```
+Brauzerda ko'rsatilgan localhost portini oching.
 
-## React Compiler
+## Hisobot
+- Ism: Asilbek Suvonov Baxtiyor o'g'li
+- Vazifa qancha vaqt oldi: 1.5 soat
+- Qiyin bo'lgan joylar: qiyin bulgani yuq
+- Interfeys skrinshotlari:
+  - ![Mini marketplace UI - mahsulotlar](src/assets/img1.png)
+  - ![Mini marketplace UI - savat](src/assets/img2.png)
+- Demo havolasi (agar bo'lsa): 
+  ```https://mini-marketplace-omega.vercel.app/```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Foydali joylar
+- Asosiy komponent: `src/App.jsx`
+- Savat komponentlari: `src/cart/CartList.jsx`, `src/cart/CartItem.jsx`
+- Stil fayli: `src/styles.css`
+- Mahsulotni chaqirish va render: `src/products-vanilla.js`
