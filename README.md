@@ -21,7 +21,7 @@ Brauzerda ko'rsatilgan localhost portini oching.
 - Interfeys skrinshotlari:
   - ![Mini marketplace UI - mahsulotlar](src/assets/img1.png)
   - ![Mini marketplace UI - savat](src/assets/img2.png)
-- Demo havolasi (agar bo'lsa): 
+- Demo havolasi: 
   ```bash 
   https://mini-marketplace-omega.vercel.app/
   ```
